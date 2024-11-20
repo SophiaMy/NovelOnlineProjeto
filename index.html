@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovelOnline</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+  <header class="cabeçalho">
+     <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+    <label for="menu">
+       <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+    </label>
+  </label>
+  <ul class="lista-menu">
+    <li class="lista-menu_titulo">Categorias</li>
+    <li class="lista-menu_item">
+      <a href="#" class="lista-menu_link">Noticias</a>
+    </li>
+    <li class="lista-menu_item">
+      <a href="#" class="lista-menu_link">Tradutores</a>
+    </li>
+    <li class="lista-menu_item">
+      <a href="#" class="lista-menu_link">Updates</a>
+    </li>
+    <li class="lista-menu_item">
+      <a href="#" class="lista-menu_link">NovelNacional</a>
+    </li>
+    <li class="lista-menu_item">
+      <a href="#" class="lista-menu_link">Discord</a>
+    </li>
+  </ul>
+      <img src="img/2odj3eZFcGi1O1fKZMDkJLAkuRi.svg" alt="logo" class="container__imagem">
+    </div>
+
+    <div class="container">
+       <a href="#"><img src="img/Favoritos.svg" alt="meus favoritos" class="container__imagem"></a>
+       <a href="#"><img src="img/Compras.svg" alt="ajude comprando" class="container__imagem"></a>
+       <a href="#"><img src="img/Usuario.svg" alt="perfil" class="container__imagem"></a>
+     </div>
+  </header>
+
+ <section class="banner">
+    <h2 class="banner__titulo">Já sabe o que vai ler?</h2>
+    <p class="banner__texto">Encontre nesse site as Novels que voce quer!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual a Novel?">
+ </section>
+
+ <section class="carrossel">
+    <h2 class="carrossel__titulo">Novas atualizações</h2>
+    <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="livro sobre o kim dokja"></div>
+    <div class="swiper-slide"><img src="img/Guia Front-end.svg"fudido que vira foda"></div>
+    <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="um npc numa Novel?"></div>
+    <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="lovecraft mais 1000 capitulos"></div>
+    <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="ruivo pai de familia vilao"></div>
+    <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="gay e fantasmas"></div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+
+ <div class="card">
+   <div class="card__descrição">
+    <div class="descrição">
+      <h3 class="descrição__titulo" >Talvez voce também sé interesse por...</h3>
+      <H2 class="descrição__titulo-livro">Tradução e Edição</H2>
+      <p class="descrição__texto">Ajudando a traduzir Noveis com permissao oficial</p>
+    </div>
+</div>
+ </section>
+
+
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+  spaceBetween: 10,
+  SlidesPerView: 3,
+});
+</script>
+
+</body>
+
+
+
+
+
+</html>
